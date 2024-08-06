@@ -1,0 +1,32 @@
+{
+  "name": "@yungezeit/eslint-typescript",
+  "version": "0.0.1",
+  "description": "Personal TypeScript ESLint flat config",
+  "type": "module",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "homepage": "https://github.com/yungezeit/eslint/tree/main/presets/typescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yungezeit/eslint.git",
+    "directory": "presets/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/yungezeit/eslint/issues"
+  },
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "typescript"],
+  "main": "index.js",
+  "files": ["*.js"],
+  "peerDependencies": {
+    "typescript": "^5.5.0",
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "typescript-eslint": "^8.0.1",
+    "@yungezeit/eslint-base": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.0",
+    "eslint": "^9.8.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "yaml", "json", "jsonc", "json5"],
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "quickfix.biome": "explicit"
+  }
+}

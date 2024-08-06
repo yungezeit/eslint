@@ -1,0 +1,23 @@
+{
+  "name": "@yungezeit/eslint-storybook",
+  "version": "0.0.1",
+  "description": "Personal Storybook ESLint flat config",
+  "type": "module",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "homepage": "https://github.com/yungezeit/eslint/tree/main/presets/storybook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yungezeit/eslint.git",
+    "directory": "presets/storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/yungezeit/eslint/issues"
+  },
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "storybook"],
+  "main": "index.js",
+  "files": ["*.js"],
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@yungezeit/eslint-base",
+  "version": "0.0.1",
+  "description": "Personal base ESLint flat config",
+  "type": "module",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "homepage": "https://github.com/yungezeit/eslint/tree/main/presets/base",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yungezeit/eslint.git",
+    "directory": "presets/base"
+  },
+  "bugs": {
+    "url": "https://github.com/yungezeit/eslint/issues"
+  },
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "base"],
+  "main": "index.js",
+  "files": ["*.js"],
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-markdown": "^5.1.0",
+    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-regexp": "^2.6.0",
+    "eslint-plugin-yml": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.0",
+    "eslint": "^9.8.0"
+  }
+}

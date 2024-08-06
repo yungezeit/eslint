@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "module": "Preserve",
+    "moduleResolution": "Bundler"
+  }
+}

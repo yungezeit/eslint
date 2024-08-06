@@ -1,0 +1,24 @@
+{
+  "name": "@yungezeit/eslint-root",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Personal ESLint flat config",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "biome format . --fix",
+    "changeset": "changeset",
+    "release": "changeset publish"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.5",
+    "eslint": "^9.8.0"
+  }
+}

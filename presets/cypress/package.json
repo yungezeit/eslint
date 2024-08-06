@@ -1,0 +1,37 @@
+{
+  "name": "@yungezeit/eslint-cypress",
+  "version": "0.0.1",
+  "description": "Personal Cypress ESLint flat config",
+  "type": "module",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "homepage": "https://github.com/yungezeit/eslint/tree/main/presets/cypress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yungezeit/eslint.git",
+    "directory": "presets/cypress"
+  },
+  "bugs": {
+    "url": "https://github.com/yungezeit/eslint/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "flat",
+    "yungezeit",
+    "cypress"
+  ],
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "@yungezeit/eslint-typescript": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "^3.4.0"
+  }
+}
