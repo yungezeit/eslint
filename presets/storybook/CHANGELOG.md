@@ -1,5 +1,11 @@
 # @yungezeit/eslint-storybook
 
+## 0.0.3
+
+### Patch Changes
+
+- 397c61a: Fixed dependencies
+
 ## 0.0.2
 
 ### Patch Changes
