@@ -16,7 +16,7 @@
   },
   "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "vue"],
   "main": "index.js",
-  "files": ["*.js"],
+  "files": ["**/*.js"],
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
