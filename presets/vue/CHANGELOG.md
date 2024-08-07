@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.4
+
+### Patch Changes
+
+- b24ae17: Restricted ts preset application to TypeScript files
+- Updated dependencies [b24ae17]
+  - @yungezeit/eslint-typescript@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes
