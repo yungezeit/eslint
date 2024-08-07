@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.5
+
+### Patch Changes
+
+- fd4713e: Fixed path to test files configuration
+
 ## 0.0.4
 
 ### Patch Changes

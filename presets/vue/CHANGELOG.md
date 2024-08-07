@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.5
+
+### Patch Changes
+
+- fd4713e: Fixed path to test files configuration
+- Updated dependencies [fd4713e]
+  - @yungezeit/eslint-typescript@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
