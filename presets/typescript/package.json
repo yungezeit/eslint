@@ -26,15 +26,16 @@
     "**/*.js"
   ],
   "peerDependencies": {
-    "typescript": "^5.5.0",
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0",
+    "typescript": "^5.5.0"
   },
   "dependencies": {
-    "typescript-eslint": "^8.0.1",
-    "@yungezeit/eslint-base": "workspace:*"
+    "@yungezeit/eslint-base": "workspace:*",
+    "typescript-eslint": "^8.0.1"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.0",
+    "@types/node": "^22.1.0",
     "eslint": "^9.8.0"
   }
 }

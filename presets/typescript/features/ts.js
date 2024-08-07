@@ -1,5 +1,4 @@
 import tseslint from 'typescript-eslint';
-import baseConfig from '@yungezeit/eslint-base';
 
 /**
  * Custom configuration used to lint TypeScript codebases.
@@ -20,12 +19,21 @@ const config = {
   },
 };
 
-/**@type {any} */
-const basePresets = baseConfig;
-
-export default tseslint.config(
-  ...basePresets,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
-  config,
-);
+export default tseslint
+  .config(
+    ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
+    {
+      languageOptions: {
+        parserOptions: {
+          projectService: true,
+          tsconfigRootDir: import.meta.dirname,
+        },
+      },
+    },
+    config,
+  )
+  .map((config) => ({
+    ...config,
+    files: ['**/*.{ts,tsx,mts,cts}'],
+  }));

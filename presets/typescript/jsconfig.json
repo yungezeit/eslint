@@ -4,7 +4,9 @@
     "allowJs": true,
     "rootDir": ".",
     "baseUrl": ".",
+    "target": "ESNext",
     "module": "Preserve",
-    "moduleResolution": "Bundler"
+    "moduleResolution": "Bundler",
+    "types": ["node"]
   }
 }
