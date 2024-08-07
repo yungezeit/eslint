@@ -26,17 +26,8 @@ free to create a
 
 ## Pre-requisites
 
-This project is written in TypeScript and uses [Node.js](https://nodejs.org/en/download) as a
-JavaScript runtime and [pnpm](https://pnpm.io/fr/installation) as a package manager. Please make
-sure those are installed and that their versions match the ones specified in the `engines` field of
-the root `package.json` file.
-
-You can check both versions by running the following commands in a terminal:
-
-```bash
-node -v
-pnpm -v
-```
+This project uses [Node.js](https://nodejs.org/en/download) as a JavaScript runtime and
+[pnpm](https://pnpm.io/fr/installation) as a package manager.
 
 This project also uses:
 

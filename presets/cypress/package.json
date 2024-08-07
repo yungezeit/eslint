@@ -14,24 +14,14 @@
   "bugs": {
     "url": "https://github.com/yungezeit/eslint/issues"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "flat",
-    "yungezeit",
-    "cypress"
-  ],
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "cypress"],
   "main": "index.js",
-  "files": [
-    "*.js"
-  ],
+  "files": ["*.js"],
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
-  "dependencies": {
-    "@yungezeit/eslint-typescript": "workspace:*"
-  },
   "devDependencies": {
+    "@yungezeit/eslint-typescript": "workspace:*",
     "eslint-plugin-cypress": "^3.4.0"
   }
 }
