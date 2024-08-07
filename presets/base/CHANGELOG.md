@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.4
+
+### Patch Changes
+
+- b24ae17: Restricted ts preset application to TypeScript files
+
 ## 0.0.3
 
 ### Patch Changes
