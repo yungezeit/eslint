@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.6
+
+### Patch Changes
+
+- f26be99: Added typescript-eslint parser for vue files
+- Updated dependencies [f26be99]
+  - @yungezeit/eslint-typescript@0.0.6
+
 ## 0.0.5
 
 ### Patch Changes

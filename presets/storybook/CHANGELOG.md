@@ -1,5 +1,11 @@
 # @yungezeit/eslint-storybook
 
+## 0.0.6
+
+### Patch Changes
+
+- f26be99: Added typescript-eslint parser for vue files
+
 ## 0.0.5
 
 ### Patch Changes
