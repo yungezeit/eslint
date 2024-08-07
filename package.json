@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "format": "biome format . --fix",
-    "changeset": "changeset",
-    "release": "changeset publish"
+    "changeset:release": "pnpm build && changeset publish",
+    "changeset:version": "changeset version && pnpm install --lockfile-only"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
