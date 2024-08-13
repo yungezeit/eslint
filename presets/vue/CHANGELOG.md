@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.8
+
+### Patch Changes
+
+- 68574fb: Made linter a bit more indulgent in test files
+- Updated dependencies [68574fb]
+  - @yungezeit/eslint-typescript@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes
