@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.9
+
+### Patch Changes
+
+- a4fd247: Disabled missing `@typescript-eslint/no-unsafe-argument`
+
 ## 0.0.8
 
 ### Patch Changes
