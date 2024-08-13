@@ -8,11 +8,11 @@ import js from '@eslint/js';
 const config = {
   rules: {
     ...js.configs.recommended.rules,
-    // Only allow console.info, console.warn, and console.error.
+    /** Only allow console.info, console.warn, and console.error. */
     'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
-    // Sparse arrays aren't that confusing and may simplify code.
+    /** Sparse arrays aren't that confusing and may simplify code. */
     'no-sparse-arrays': 'off',
-    // Allow unused variables that start with an underscore for later use.
+    /** Allow unused variables that start with an underscore for later use. */
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
   },
 };
