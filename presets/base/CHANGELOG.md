@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.8
+
+### Patch Changes
+
+- 68574fb: Made linter a bit more indulgent in test files
+
 ## 0.0.7
 
 ### Patch Changes
