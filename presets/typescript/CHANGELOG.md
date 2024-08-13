@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.7
+
+### Patch Changes
+
+- db009d0: Disabled `@typescript-eslint/no-unsafe-assignment` and `@typescript-eslint/no-unsafe-argument` rules for test files, globally disabled `@typescript-eslint/no-unnecessary-type-parameters` rule for convenience
+- Updated dependencies [db009d0]
+  - @yungezeit/eslint-base@0.0.7
+
 ## 0.0.6
 
 ### Patch Changes
