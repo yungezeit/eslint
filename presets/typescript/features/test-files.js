@@ -6,6 +6,7 @@ export const testFiles = {
   files: ['**/*.test.ts'],
   rules: {
     // Be a bit more indulgent in test files.
+    '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-declaration-merging': 'off',
