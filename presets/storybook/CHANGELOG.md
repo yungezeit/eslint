@@ -1,5 +1,11 @@
 # @yungezeit/eslint-storybook
 
+## 0.0.10
+
+### Patch Changes
+
+- f244254: chore: disable no-unsafe-\* rules because these are too strict and obfuscate actual type errors, strict and any-exclusion should be handled by the type checker
+
 ## 0.0.9
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@yungezeit/eslint-storybook",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Personal Storybook ESLint flat config",
   "type": "module",
   "author": "Charles Gruenais",
