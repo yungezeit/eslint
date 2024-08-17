@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.10
+
+### Patch Changes
+
+- f244254: chore: disable no-unsafe-\* rules because these are too strict and obfuscate actual type errors, strict and any-exclusion should be handled by the type checker
+- Updated dependencies [f244254]
+  - @yungezeit/eslint-typescript@0.0.10
+
 ## 0.0.9
 
 ### Patch Changes
