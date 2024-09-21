@@ -8,6 +8,8 @@ import pluginVue from 'eslint-plugin-vue';
  */
 const config = {
   rules: {
+    /** TypeScript-aware macros do not work with interfaces. */
+    '@typescript-eslint/consistent-type-definitions': 'off',
     'vue/no-v-html': 'off',
     'vue/no-setup-props-destructure': 'off',
     'vue/multi-word-component-names': 'off',
