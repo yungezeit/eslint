@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.12
+
+### Patch Changes
+
+- 06443e3: Ignore rule `@typescript-eslint/consistent-type-definitions` for Vue projects as TypeScript-aware macros do not support interfaces.
+- Updated dependencies [06443e3]
+  - @yungezeit/eslint-base@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes
