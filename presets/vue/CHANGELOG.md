@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.11
+
+### Patch Changes
+
+- fe93592: Allowed using numbers in template expressions`
+- Updated dependencies [fe93592]
+  - @yungezeit/eslint-typescript@0.0.11
+
 ## 0.0.10
 
 ### Patch Changes

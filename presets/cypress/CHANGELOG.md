@@ -1,5 +1,11 @@
 # @yungezeit/eslint-cypress
 
+## 0.0.11
+
+### Patch Changes
+
+- fe93592: Allowed using numbers in template expressions`
+
 ## 0.0.10
 
 ### Patch Changes
