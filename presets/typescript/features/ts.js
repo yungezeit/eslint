@@ -21,6 +21,9 @@ const config = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     /** This rule may be a bit unstable. */
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
+    /** Using numbers in template expressions is rather safe and frequent. */
+    '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+
     /** Allow unused variables that start with an underscore for later use. */
     '@typescript-eslint/no-unused-vars': [
       'error',
