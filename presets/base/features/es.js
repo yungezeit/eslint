@@ -14,6 +14,8 @@ const config = {
     'no-sparse-arrays': 'off',
     /** Allow unused variables that start with an underscore for later use. */
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    /** This may conflict with formatters. */
+    'no-unexpected-multiline': 'off',
   },
 };
 

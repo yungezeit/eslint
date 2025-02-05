@@ -9,7 +9,10 @@ import tseslint from 'typescript-eslint';
 const config = {
   rules: {
     /** Forcing `import type { }` makes imports clearer and my relieve parsers. */
-    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { fixStyle: 'separate-type-imports', prefer: 'type-imports' },
+    ],
     /**
      * There are some legit cases where index access is necessary.
      * But keep in mind that members visibilities are lost when using index access.
@@ -19,10 +22,11 @@ const config = {
     '@typescript-eslint/no-explicit-any': 'off',
     /** Sometimes we just have no choice. */
     '@typescript-eslint/no-non-null-assertion': 'off',
-    /** This rule may be a bit unstable. */
+    /** This rule is still experimental. */
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
     /** Using numbers in template expressions is rather safe and frequent. */
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+    /** Mixed runtime- and type-imports are ugly. */
 
     /** Allow unused variables that start with an underscore for later use. */
     '@typescript-eslint/no-unused-vars': [
@@ -49,6 +53,7 @@ export default tseslint
     ...tseslint.configs.stylisticTypeChecked,
     {
       languageOptions: {
+        ecmaVersion: 'latest',
         parserOptions: {
           projectService: true,
           tsconfigRootDir: import.meta.dirname,
@@ -60,4 +65,5 @@ export default tseslint
   .map((config) => ({
     ...config,
     files: ['**/*.{ts,tsx,mts,cts}'],
+    ignores: ['**/*.d.ts'],
   }));

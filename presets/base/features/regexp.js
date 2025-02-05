@@ -8,7 +8,8 @@ import * as regexpPlugin from 'eslint-plugin-regexp';
  */
 const config = {
   rules: {
-    'yml/no-empty-mapping-value': 'off',
+    /** Allow unused capturing groups as they could be used only for match narrowing purposes. */
+    'regexp/no-unused-capturing-group': 'off',
   },
 };
 
