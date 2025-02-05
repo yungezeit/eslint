@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.13
+
+### Patch Changes
+
+- 7c87d4b: Patch some rules
+- Updated dependencies [7c87d4b]
+  - @yungezeit/eslint-typescript@0.0.13
+
 ## 0.0.12
 
 ### Patch Changes

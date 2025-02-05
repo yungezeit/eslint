@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.13
+
+### Patch Changes
+
+- 7c87d4b: Patch some rules
+
 ## 0.0.12
 
 ### Patch Changes
