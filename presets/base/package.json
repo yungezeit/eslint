@@ -1,6 +1,6 @@
 {
   "name": "@yungezeit/eslint-base",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Personal base ESLint flat config",
   "type": "module",
   "author": "Charles Gruenais",
