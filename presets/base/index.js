@@ -6,13 +6,21 @@ import pkgPreset from './features/pkg.js';
 import promisesPreset from './features/promises.js';
 import regexpPreset from './features/regexp.js';
 import yamlPreset from './features/yaml.js';
+import { testFiles } from './features/test-files.js';
 
-export default [
-  {
-    languageOptions: {
-      ecmaVersion: 'latest',
-    },
-  },
+const ECMA_LATEST = { languageOptions: { ecmaVersion: 'latest' } };
+
+/**
+ * Create a base ESLint configuration.
+ * @param internalPatterns {string[]} Patterns for internal modules.
+ * @param pathGroups {any[]} Path groups for import/order.
+ */
+export function createBaseConfig(internalPatterns, pathGroups) {
+  return [...flatConfig, enforceImportOrder(internalPatterns, pathGroups)];
+}
+
+export const flatConfig = [
+  ECMA_LATEST,
   ...esPreset,
   ...importsPreset,
   ...jsonPreset,
@@ -21,4 +29,35 @@ export default [
   ...promisesPreset,
   ...regexpPreset,
   ...yamlPreset,
+  testFiles,
 ];
+
+/**
+ * Create a  config that enforce import order.
+ * @param internalPatterns {string[]} Patterns for internal modules.
+ * @param pathGroups {any[]} Path groups for import/order.
+ */
+export function enforceImportOrder(internalPatterns, pathGroups) {
+  return {
+    rules: {
+      'import/order': [
+        'error',
+        {
+          'newlines-between': 'always',
+          groups: ['builtin', 'external', 'internal', 'parent', 'index', 'sibling'],
+          alphabetize: { order: 'asc', orderImportKind: 'asc' },
+          pathGroups: [
+            ...internalPatterns.map((pattern) => ({
+              pattern,
+              group: 'internal',
+              position: 'after',
+            })),
+            ...pathGroups,
+          ],
+        },
+      ],
+    },
+  };
+}
+
+export default flatConfig;

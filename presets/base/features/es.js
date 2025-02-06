@@ -16,6 +16,8 @@ const config = {
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     /** This may conflict with formatters. */
     'no-unexpected-multiline': 'off',
+    /** Case declarations can be useful. */
+    'no-case-declarations': 'off',
   },
 };
 
