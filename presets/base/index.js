@@ -21,6 +21,9 @@ export const flatConfig = [
   ...regexpPreset,
   ...yamlPreset,
   testFiles,
+  {
+    ignores: ['**/*.d.ts'],
+  },
 ];
 
 /**
