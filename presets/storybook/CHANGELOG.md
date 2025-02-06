@@ -1,5 +1,11 @@
 # @yungezeit/eslint-storybook
 
+## 0.0.15
+
+### Patch Changes
+
+- ef499ca: Fixed enforceImportOrder utility
+
 ## 0.0.14
 
 ### Patch Changes
