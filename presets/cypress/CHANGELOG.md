@@ -1,5 +1,11 @@
 # @yungezeit/eslint-cypress
 
+## 0.0.14
+
+### Patch Changes
+
+- b983b7d: Added wrapper function to provide custom import/order rule configuration
+
 ## 0.0.13
 
 ### Patch Changes
