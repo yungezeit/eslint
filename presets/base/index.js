@@ -29,9 +29,9 @@ export const flatConfig = [
 /**
  * Create a  config that enforce import order.
  * @param internalPatterns {string[]} Patterns for internal modules.
- * @param pathGroups {any[]} Path groups for import/order.
+ * @param pathGroups {unknown[]} Path groups for import/order.
  */
-export function enforceImportOrder(internalPatterns, pathGroups) {
+export function enforceImportOrder(internalPatterns, pathGroups = []) {
   return {
     rules: {
       'import/order': [
@@ -41,12 +41,12 @@ export function enforceImportOrder(internalPatterns, pathGroups) {
           groups: ['builtin', 'external', 'internal', 'parent', 'index', 'sibling'],
           alphabetize: { order: 'asc', orderImportKind: 'asc' },
           pathGroups: [
+            ...pathGroups,
             ...internalPatterns.map((pattern) => ({
               pattern,
               group: 'internal',
               position: 'after',
             })),
-            ...pathGroups,
           ],
         },
       ],
