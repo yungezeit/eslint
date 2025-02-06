@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.15
+
+### Patch Changes
+
+- ef499ca: Fixed enforceImportOrder utility
+- Updated dependencies [ef499ca]
+  - @yungezeit/eslint-typescript@0.0.15
+
 ## 0.0.14
 
 ### Patch Changes
