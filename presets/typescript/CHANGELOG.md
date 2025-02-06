@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.14
+
+### Patch Changes
+
+- b983b7d: Added wrapper function to provide custom import/order rule configuration
+- Updated dependencies [b983b7d]
+  - @yungezeit/eslint-base@0.0.14
+
 ## 0.0.13
 
 ### Patch Changes
