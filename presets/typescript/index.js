@@ -7,14 +7,7 @@ const delegateBaseRule = {
   rules: { 'no-undef': 'off', 'no-unused-vars': 'off' },
 };
 
-/**
- * Create a TypeScript ESLint configuration.
- * @param internalPatterns {string[]} Patterns for internal modules.
- * @param pathGroups {any[]} Path groups for import/order.
- */
-export function createBaseConfig(internalPatterns, pathGroups) {
-  return [...flatConfig, enforceImportOrder(internalPatterns, pathGroups)];
-}
+export { enforceImportOrder };
 
 export const flatConfig = [...basePreset, ...tsPreset, testFiles, delegateBaseRule];
 

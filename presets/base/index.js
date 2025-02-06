@@ -10,15 +10,6 @@ import { testFiles } from './features/test-files.js';
 
 const ECMA_LATEST = { languageOptions: { ecmaVersion: 'latest' } };
 
-/**
- * Create a base ESLint configuration.
- * @param internalPatterns {string[]} Patterns for internal modules.
- * @param pathGroups {any[]} Path groups for import/order.
- */
-export function createBaseConfig(internalPatterns, pathGroups) {
-  return [...flatConfig, enforceImportOrder(internalPatterns, pathGroups)];
-}
-
 export const flatConfig = [
   ECMA_LATEST,
   ...esPreset,
