@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.17
+
+### Patch Changes
+
+- 7ab116e: Fixed vue preset & added node environment option
+- Updated dependencies [7ab116e]
+  - @yungezeit/eslint-base@0.0.17
+
 ## 0.0.16
 
 ### Patch Changes

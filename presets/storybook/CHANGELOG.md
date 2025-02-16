@@ -1,5 +1,11 @@
 # @yungezeit/eslint-storybook
 
+## 0.0.17
+
+### Patch Changes
+
+- 7ab116e: Fixed vue preset & added node environment option
+
 ## 0.0.16
 
 ### Patch Changes
