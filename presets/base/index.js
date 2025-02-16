@@ -1,8 +1,10 @@
 /**
  * @typedef {Object} BaseOptions
  * @property {string[]=} internalPatterns - Patterns for internal modules.
+ * @property {boolean=} node - Allow node environment.
  */
 
+import globals from 'globals';
 import esPreset from './features/es.js';
 import importsPreset from './features/imports.js';
 import jsonPreset from './features/json.js';
@@ -45,6 +47,7 @@ export function enforceImportOrder(internalPatterns) {
           groups: ['builtin', 'external', 'internal', ['parent', 'index', 'sibling']],
           alphabetize: { order: 'asc', orderImportKind: 'asc' },
           pathGroupsExcludedImportTypes: ['builtin', 'object'],
+          // sortTypesGroup: true, // @unreleased
           pathGroups: [
             {
               pattern: `{` + internalPatterns.join(',') + `}`,
@@ -58,9 +61,16 @@ export function enforceImportOrder(internalPatterns) {
   };
 }
 
+export function allowNode() {
+  return {
+    languageOptions: { globals: { ...globals.node } },
+    rules: { 'import/no-nodejs-modules': 'off' },
+  };
+}
+
 /**
  * Create a base ESLint configuration.
- * @param configs {import('eslint').ESLint.ConfigData[]} Configurations.
+ * @param configs {import('@typescript-eslint/utils').TSESLint.FlatConfig.Config[]} Configurations.
  * @param options {BaseOptions} Base preset options.
  */
 export function createBaseConfig(configs, options) {
@@ -68,6 +78,10 @@ export function createBaseConfig(configs, options) {
 
   if (options.internalPatterns?.length) {
     finalConfig.push(enforceImportOrder(options.internalPatterns));
+  }
+
+  if (options.node) {
+    finalConfig.push(allowNode());
   }
 
   return finalConfig;

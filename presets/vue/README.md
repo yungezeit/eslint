@@ -45,10 +45,12 @@ Alternatively, you can use the `createVueConfig` function to create/merge a ESLi
 import { createVueConfig } from '@yungezeit/eslint-vue';
 
 export default createVueConfig([ /** Your configs… */], {
-  /** Path to tsconfig root dir (see "Type-aware" linting below) */
+  /** (optional) Path to tsconfig root dir (see "Type-aware" linting below) */
   tsconfigRootDir: 'path/to/project',
-  /** Internal patterns passed to `enforceImportOrder` (see "Imports order" below). */
+  /** (optional) Internal patterns passed to `enforceImportOrder` (see "Imports order" below). */
   internalPatterns: [],
+  /** (optional) Should node environment be supported? */
+  node: true,
 });
 ```
 

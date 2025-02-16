@@ -29,8 +29,10 @@
     "eslint": "^9.0.0"
   },
   "dependencies": {
+    "@vue/eslint-config-typescript": "^14.4.0",
     "@yungezeit/eslint-typescript": "workspace:*",
-    "eslint-plugin-vue": "^9.32.0"
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.15.0"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",

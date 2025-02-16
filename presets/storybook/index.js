@@ -2,10 +2,11 @@
  * @typedef {Object} StorybookOptions
  * @property {string[]=} internalPatterns - Patterns for internal modules.
  * @property {string=} tsconfigRootDir - Path to tsconfig root dir.
+ * @property {boolean=} node - Allow node environment.
  */
 
 import storybook from 'eslint-plugin-storybook';
-import typescriptPreset, { enforceImportOrder } from '@yungezeit/eslint-typescript';
+import typescriptPreset, { createTsConfig, enforceImportOrder } from '@yungezeit/eslint-typescript';
 
 export { enforceImportOrder };
 
@@ -13,28 +14,15 @@ export const flatConfig = [...typescriptPreset, ...storybook.configs['flat/recom
 
 /**
  * Create a ESLint configuration array for a Storybook project.
- * @param configs {import('eslint').ESLint.ConfigData[]} Configurations.
+ * @param configs {import('@typescript-eslint/utils').TSESLint.FlatConfig.Config[]} Configurations.
  * @param options {StorybookOptions} Vue preset options
  */
 export function createStorybookConfig(configs, options) {
-  let finalConfig = [...flatConfig, ...configs];
-
-  if (options.internalPatterns?.length) {
-    finalConfig.push(enforceImportOrder(options.internalPatterns));
-  }
-
-  if (options.tsconfigRootDir) {
-    finalConfig.push({
-      languageOptions: {
-        parserOptions: {
-          projectService: true,
-          tsconfigRootDir: options.tsconfigRootDir,
-        },
-      },
-    });
-  }
-
-  return finalConfig;
+  return createTsConfig([...flatConfig, ...configs], {
+    internalPatterns: options.internalPatterns,
+    tsconfigRootDir: options.tsconfigRootDir,
+    node: options.node,
+  });
 }
 
 export default flatConfig;

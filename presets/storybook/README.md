@@ -49,6 +49,8 @@ export default createStorybookConfig([ /** Your configs… */], {
   tsconfigRootDir: 'path/to/project',
   /** Internal patterns passed to `enforceImportOrder` (see "Imports order" below). */
   internalPatterns: [],
+  /** (optional) Should node environment be supported? */
+  node: true,
 });
 ```
 

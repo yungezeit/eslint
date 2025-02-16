@@ -52,8 +52,10 @@ Alternatively, you can use the `createBaseConfig` function to create a base ESLi
 import { createBaseConfig } from '@yungezeit/eslint-base';
 
 export default createBaseConfig([ /** Your configs… */], {
-  /** Internal patterns passed to `enforceImportOrder` (see below). */
+  /** (optional) Internal patterns passed to `enforceImportOrder` (see below). */
   internalPatterns: [],
+  /** (optional) Should node environment be supported? */
+  node: true,
 });
 ```
 

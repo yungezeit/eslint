@@ -2,9 +2,10 @@
  * @typedef {Object} TsOptions
  * @property {string[]=} internalPatterns - Patterns for internal modules.
  * @property {string=} tsconfigRootDir - Path to tsconfig root dir.
+ * @property {boolean=} node - Allow node environment.
  */
 
-import basePreset, { enforceImportOrder } from '@yungezeit/eslint-base';
+import basePreset, { createBaseConfig, enforceImportOrder } from '@yungezeit/eslint-base';
 import tsPreset from './features/ts.js';
 import { testFiles } from './features/test-files.js';
 
@@ -19,15 +20,14 @@ export const flatConfig = [...basePreset, ...tsPreset, testFiles, delegateBaseRu
 
 /**
  * Create a ESLint configuration array for a TypeScript project.
- * @param configs {import('eslint').ESLint.ConfigData[]} Configurations.
+ * @param configs {import('@typescript-eslint/utils').TSESLint.FlatConfig.Config[]} Configurations.
  * @param options {TsOptions} TypeScript preset options.
  */
 export function createTsConfig(configs, options) {
-  let finalConfig = [...flatConfig, ...configs];
-
-  if (options.internalPatterns?.length) {
-    finalConfig.push(enforceImportOrder(options.internalPatterns));
-  }
+  let finalConfig = createBaseConfig(configs, {
+    internalPatterns: options.internalPatterns,
+    node: options.node,
+  });
 
   if (options.tsconfigRootDir) {
     finalConfig.push({
