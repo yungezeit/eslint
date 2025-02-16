@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.16
+
+### Patch Changes
+
+- 83908d2: Added configuration functions to main presets
+
 ## 0.0.15
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.16
+
+### Patch Changes
+
+- 83908d2: Added configuration functions to main presets
+- Updated dependencies [83908d2]
+  - @yungezeit/eslint-typescript@0.0.16
+
 ## 0.0.15
 
 ### Patch Changes
