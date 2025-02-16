@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.18
+
+### Patch Changes
+
+- c8fe42c: Fixed TypeScript configuration merge
+- Updated dependencies [c8fe42c]
+  - @yungezeit/eslint-base@0.0.18
+
 ## 0.0.17
 
 ### Patch Changes

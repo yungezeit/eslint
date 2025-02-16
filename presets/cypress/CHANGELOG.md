@@ -1,5 +1,11 @@
 # @yungezeit/eslint-cypress
 
+## 0.0.18
+
+### Patch Changes
+
+- c8fe42c: Fixed TypeScript configuration merge
+
 ## 0.0.17
 
 ### Patch Changes
