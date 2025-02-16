@@ -1,3 +1,8 @@
+/**
+ * @typedef {Object} BaseOptions
+ * @property {string[]=} internalPatterns - Patterns for internal modules.
+ */
+
 import esPreset from './features/es.js';
 import importsPreset from './features/imports.js';
 import jsonPreset from './features/json.js';
@@ -27,31 +32,45 @@ export const flatConfig = [
 ];
 
 /**
- * Create a  config that enforce import order.
+ * Create a config that enforce import order.
  * @param internalPatterns {string[]} Patterns for internal modules.
- * @param pathGroups {unknown[]} Path groups for import/order.
  */
-export function enforceImportOrder(internalPatterns, pathGroups = []) {
+export function enforceImportOrder(internalPatterns) {
   return {
     rules: {
       'import/order': [
         'error',
         {
           'newlines-between': 'always',
-          groups: ['builtin', 'external', 'internal', 'parent', 'index', 'sibling'],
+          groups: ['builtin', 'external', 'internal', ['parent', 'index', 'sibling']],
           alphabetize: { order: 'asc', orderImportKind: 'asc' },
+          pathGroupsExcludedImportTypes: ['builtin', 'object'],
           pathGroups: [
-            ...pathGroups,
-            ...internalPatterns.map((pattern) => ({
-              pattern,
+            {
+              pattern: `{` + internalPatterns.join(',') + `}`,
               group: 'internal',
               position: 'after',
-            })),
+            },
           ],
         },
       ],
     },
   };
+}
+
+/**
+ * Create a base ESLint configuration.
+ * @param configs {import('eslint').ESLint.ConfigData[]} Configurations.
+ * @param options {BaseOptions} Base preset options.
+ */
+export function createBaseConfig(configs, options) {
+  let finalConfig = [...flatConfig, ...configs];
+
+  if (options.internalPatterns?.length) {
+    finalConfig.push(enforceImportOrder(options.internalPatterns));
+  }
+
+  return finalConfig;
 }
 
 export default flatConfig;

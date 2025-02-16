@@ -8,5 +8,6 @@ export const testFiles = {
     // The following rules may be annoying when testing.
     'max-classes-per-file': 'off',
     'no-new': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
   },
 };

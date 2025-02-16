@@ -29,7 +29,10 @@
     "eslint": "^9.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^9.6.0",
-    "eslint": "^9.18.0"
+    "@types/eslint": "^9.6.1",
+    "eslint": "^9.20.1"
+  },
+  "dependencies": {
+    "eslint-plugin-storybook": "^0.11.3"
   }
 }

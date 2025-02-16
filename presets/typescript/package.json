@@ -32,11 +32,11 @@
   },
   "dependencies": {
     "@yungezeit/eslint-base": "workspace:*",
-    "typescript-eslint": "^8.0.1"
+    "typescript-eslint": "^8.24.0"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.10.8",
-    "eslint": "^9.18.0"
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1"
   }
 }

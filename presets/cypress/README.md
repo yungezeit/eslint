@@ -15,7 +15,7 @@ yarn add -D @yungezeit/eslint-cypress
 bun add -D @yungezeit/eslint-cypress
 ```
 
-## Setup
+## Usage
 
 ```js
 // eslint.config.js

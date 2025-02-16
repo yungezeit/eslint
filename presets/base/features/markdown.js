@@ -5,6 +5,10 @@ import markdown from 'eslint-plugin-markdown';
  * It includes `eslint-plugin-markdown` recommended configuration.
  * @type {import('eslint').Linter.Config}
  */
-const config = {};
+const config = {
+  rules: {
+    'import/no-unresolved': 'off',
+  },
+};
 
 export default [...markdown.configs.recommended, config];
