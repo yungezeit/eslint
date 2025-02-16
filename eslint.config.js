@@ -1,2 +1,10 @@
 import config from './presets/base/index.js';
-export default config;
+export default [
+  ...config,
+  {
+    rules: {
+      'import/no-nodejs-modules': 'off',
+      'import/named': 'off', // @todo only target *.md.
+    },
+  },
+];
