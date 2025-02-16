@@ -8,7 +8,7 @@ import tseslint from 'typescript-eslint';
  */
 const config = {
   rules: {
-    /** Forcing `import type { }` makes imports clearer and my relieve parsers. */
+    /** Forcing `import type { }` makes imports clearer. */
     '@typescript-eslint/consistent-type-imports': [
       'error',
       { fixStyle: 'separate-type-imports', prefer: 'type-imports' },
@@ -26,8 +26,8 @@ const config = {
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
     /** Using numbers in template expressions is rather safe and frequent. */
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
-    /** Mixed runtime- and type-imports are ugly. */
-
+    /** Redundant type constitutents may be useful for clarity purposes. */
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
     /** Allow unused variables that start with an underscore for later use. */
     '@typescript-eslint/no-unused-vars': [
       'error',
