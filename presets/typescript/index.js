@@ -24,7 +24,7 @@ export const flatConfig = [...basePreset, ...tsPreset, testFiles, delegateBaseRu
  * @param options {TsOptions} TypeScript preset options.
  */
 export function createTsConfig(configs, options) {
-  let finalConfig = createBaseConfig([...configs, ...flatConfig], {
+  let finalConfig = createBaseConfig([...flatConfig, ...configs], {
     internalPatterns: options.internalPatterns,
     node: options.node,
   });
