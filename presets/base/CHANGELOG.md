@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.19
+
+### Patch Changes
+
+- 32cd933: Fixed typescript config order when using the configuration utility function
+
 ## 0.0.18
 
 ### Patch Changes
