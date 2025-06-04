@@ -1,5 +1,11 @@
 # @yungezeit/eslint-cypress
 
+## 0.0.20
+
+### Patch Changes
+
+- e49656f: Disabled markdown typescript codeblock validations
+
 ## 0.0.19
 
 ### Patch Changes
