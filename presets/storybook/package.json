@@ -14,17 +14,9 @@
   "bugs": {
     "url": "https://github.com/yungezeit/eslint/issues"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "flat",
-    "yungezeit",
-    "storybook"
-  ],
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "storybook"],
   "main": "index.js",
-  "files": [
-    "**/*.js"
-  ],
+  "files": ["**/*.js"],
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
@@ -33,6 +25,7 @@
     "eslint": "^9.20.1"
   },
   "dependencies": {
-    "eslint-plugin-storybook": "^0.11.3"
+    "eslint-plugin-storybook": "^0.11.3",
+    "@yungezeit/eslint-typescript": "workspace:*"
   }
 }

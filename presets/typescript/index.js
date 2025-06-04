@@ -2,6 +2,7 @@
  * @typedef {Object} TsOptions
  * @property {string[]=} internalPatterns - Patterns for internal modules.
  * @property {string=} tsconfigRootDir - Path to tsconfig root dir.
+ * @property {boolean=} enableMarkdownTls - Should TypeScript language service be enabled for markdown files?
  * @property {boolean=} node - Allow node environment.
  */
 
@@ -38,6 +39,13 @@ export function createTsConfig(configs, options) {
         },
       },
     });
+
+    // TypeScript code blocks within markdown files may be validated against your actual tsconfig.
+    // Chances are you don't need this because uou're likely writing such code blocks to illustrate
+    // consumption abd don't really care about the type system, but could by setting this to `true`.
+    if (!options.enableMarkdownTls) {
+      finalConfig.push({ ignores: ['**/*.md/*.ts', '**/*.md/*.tsx'] });
+    }
   }
 
   return finalConfig;
