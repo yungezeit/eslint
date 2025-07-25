@@ -44,10 +44,10 @@ export function enforceImportOrder(internalPatterns) {
         'error',
         {
           'newlines-between': 'always',
-          groups: ['builtin', 'external', 'internal', ['parent', 'index', 'sibling']],
-          alphabetize: { order: 'asc', orderImportKind: 'asc' },
-          pathGroupsExcludedImportTypes: ['builtin', 'object'],
-          // sortTypesGroup: true, // @unreleased
+          groups: ['builtin', 'external', 'internal', 'parent', ['index', 'sibling']],
+          alphabetize: { order: 'ignore', orderImportKind: 'ignore' },
+          pathGroupsExcludedImportTypes: ['builtin', 'object', 'internal'],
+          sortTypesGroup: true,
           pathGroups: [
             {
               pattern: `{` + internalPatterns.join(',') + `}`,

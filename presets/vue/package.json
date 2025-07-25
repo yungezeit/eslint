@@ -14,28 +14,20 @@
   "bugs": {
     "url": "https://github.com/yungezeit/eslint/issues"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "flat",
-    "yungezeit",
-    "vue"
-  ],
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "vue"],
   "main": "index.js",
-  "files": [
-    "**/*.js"
-  ],
+  "files": ["**/*.js"],
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
   "dependencies": {
-    "@vue/eslint-config-typescript": "^14.4.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
     "@yungezeit/eslint-typescript": "workspace:*",
-    "eslint-plugin-vue": "10.1.0",
-    "globals": "^16.2.0"
+    "eslint-plugin-vue": "10.3.0",
+    "globals": "^16.3.0"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "eslint": "^9.20.1"
+    "eslint": "^9.32.0"
   }
 }

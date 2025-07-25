@@ -1,2 +1,9 @@
 packages:
-  - 'presets/*'
+  - presets/*
+
+overrides:
+  '@yungezeit/eslint-root': 'link:'
+  eslint-typescript: link:C:/Users/n028/AppData/Local/pnpm/global/5/node_modules/@yungezeit/eslint-typescript
+
+onlyBuiltDependencies:
+  - esbuild

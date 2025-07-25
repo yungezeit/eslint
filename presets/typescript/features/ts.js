@@ -34,6 +34,12 @@ const config = {
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
 
+    /**
+     * Empty object types actually have a meaning. They may be used by
+     * type-level APIs e.g. to progressively construct an object type.
+     */
+    '@typescript-eslint/no-empty-object-type': 'off',
+
     // Let the type-checker do its job, these are too strict and obfuscate actual type errors.
     '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',

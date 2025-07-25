@@ -14,17 +14,9 @@
   "bugs": {
     "url": "https://github.com/yungezeit/eslint/issues"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "flat",
-    "yungezeit",
-    "typescript"
-  ],
+  "keywords": ["eslint", "eslint-config", "flat", "yungezeit", "typescript"],
   "main": "index.js",
-  "files": [
-    "**/*.js"
-  ],
+  "files": ["**/*.js"],
   "peerDependencies": {
     "eslint": "^9.0.0",
     "typescript": "^5.5.0",
@@ -32,12 +24,12 @@
   },
   "dependencies": {
     "@yungezeit/eslint-base": "workspace:*",
-    "typescript-eslint": "^8.24.0"
+    "typescript-eslint": "^8.38.0"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.13.4",
-    "@typescript-eslint/utils": "^8.33.1",
-    "eslint": "^9.20.1"
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/utils": "^8.38.0",
+    "eslint": "^9.32.0"
   }
 }
