@@ -1,5 +1,13 @@
 # @yungezeit/eslint-vue
 
+## 0.0.22
+
+### Patch Changes
+
+- fda4360: Fixed type definition path
+- Updated dependencies [fda4360]
+  - @yungezeit/eslint-typescript@0.0.22
+
 ## 0.0.21
 
 ### Patch Changes

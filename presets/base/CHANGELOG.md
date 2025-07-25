@@ -1,5 +1,11 @@
 # @yungezeit/eslint-base
 
+## 0.0.22
+
+### Patch Changes
+
+- fda4360: Fixed type definition path
+
 ## 0.0.21
 
 ### Patch Changes

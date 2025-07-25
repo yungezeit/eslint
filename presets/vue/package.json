@@ -1,7 +1,7 @@
 {
   "name": "@yungezeit/eslint-vue",
   "type": "module",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Personal Vue ESLint flat config",
   "author": "Charles Gruenais",
   "license": "MIT",
