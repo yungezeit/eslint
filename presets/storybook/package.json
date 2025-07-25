@@ -22,7 +22,7 @@
     "storybook"
   ],
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "**/*.js",
     "dist"
