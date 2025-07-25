@@ -69,4 +69,7 @@ const config = {
   },
 };
 
-export default [...eslintPluginJsonc.configs['flat/recommended-with-jsonc'], config];
+/** @type {import('eslint').Linter.Config[]} */
+const defaultConfig = [...eslintPluginJsonc.configs['flat/recommended-with-jsonc'], config];
+
+export default defaultConfig;

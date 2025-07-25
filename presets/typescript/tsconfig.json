@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"allowJs": true,
+		"rootDir": ".",
+		"baseUrl": ".",
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outDir": "dist",
+		"module": "Preserve",
+		"moduleResolution": "Bundler",
+		"types": ["node"],
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules/**", "dist/**", "**/*.d.ts"]
+}

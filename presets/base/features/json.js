@@ -12,8 +12,11 @@ const config = {
   },
 };
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const defaultConfig = [
   ...eslintPluginJsonc.configs['flat/recommended-with-jsonc'],
   ...eslintPluginJsonc.configs['flat/prettier'],
   config,
 ];
+
+export default defaultConfig;

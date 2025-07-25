@@ -4,9 +4,14 @@
     "allowJs": true,
     "rootDir": ".",
     "baseUrl": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
     "target": "ESNext",
     "module": "Preserve",
     "moduleResolution": "Bundler",
-    "types": ["node"]
-  }
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules/**", "dist/**", "**/*.d.ts"]
 }

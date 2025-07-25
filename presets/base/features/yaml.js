@@ -12,8 +12,11 @@ const config = {
   },
 };
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const defaultConfig = [
   ...eslintPluginYml.configs['flat/standard'],
   ...eslintPluginYml.configs['flat/prettier'],
   config,
 ];
+
+export default defaultConfig;

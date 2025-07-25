@@ -1,8 +1,8 @@
 {
   "name": "@yungezeit/eslint-base",
+  "type": "module",
   "version": "0.0.20",
   "description": "Personal base ESLint flat config",
-  "type": "module",
   "author": "Charles Gruenais",
   "license": "MIT",
   "homepage": "https://github.com/yungezeit/eslint/tree/main/presets/base",
@@ -22,9 +22,14 @@
     "base"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "**/*.js"
+    "**/*.js",
+    "dist"
   ],
+  "scripts": {
+    "types": "tsc"
+  },
   "peerDependencies": {
     "eslint": "^9.0.0"
   },
@@ -40,6 +45,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "eslint": "^9.32.0"
+    "eslint": "^9.32.0",
+    "typescript": "^5.8.3"
   }
 }
