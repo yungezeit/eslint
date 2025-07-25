@@ -2,8 +2,8 @@
 "@yungezeit/eslint-typescript": patch
 "@yungezeit/eslint-storybook": patch
 "@yungezeit/eslint-cypress": patch
-"@yungezeit/eslint-base": patch
 "@yungezeit/eslint-vue": patch
+"@yungezeit/eslint-base": patch
 ---
 
-Fixed type definition path
+Expose type definitions

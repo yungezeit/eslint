@@ -2,7 +2,15 @@
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [
+    [
+      "@yungezeit/eslint-base",
+      "@yungezeit/eslint-cypress",
+      "@yungezeit/eslint-storybook",
+      "@yungezeit/eslint-typescript",
+      "@yungezeit/eslint-vue"
+    ]
+  ],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch"

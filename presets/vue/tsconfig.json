@@ -1,17 +1,17 @@
 {
-	"compilerOptions": {
-		"checkJs": true,
-		"allowJs": true,
-		"rootDir": ".",
-		"baseUrl": ".",
-		"declaration": true,
-		"emitDeclarationOnly": true,
-		"outDir": "dist",
-		"target": "ESNext",
-		"module": "Preserve",
-		"moduleResolution": "Bundler",
-		"types": ["node"],
-		"skipLibCheck": true
-	},
-	"exclude": ["node_modules/**", "dist/**"]
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules/**", "dist/**"]
 }

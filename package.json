@@ -1,23 +1,23 @@
 {
-	"name": "@yungezeit/eslint-root",
-	"type": "module",
-	"version": "0.0.1",
-	"private": true,
-	"description": "Personal ESLint flat config",
-	"author": "Charles Gruenais",
-	"license": "MIT",
-	"scripts": {
-		"lint": "eslint . --fix",
-		"format": "biome format . --fix",
-		"types": "pnpm -r types",
-		"changeset:release": "pnpm types && changeset publish",
-		"changeset:version": "changeset version && pnpm install --lockfile-only"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.1.2",
-		"@changesets/changelog-github": "^0.5.1",
-		"@changesets/cli": "^2.29.5",
-		"@typescript-eslint/utils": "^8.38.0",
-		"eslint": "^9.32.0"
-	}
+  "name": "@yungezeit/eslint-root",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Personal ESLint flat config",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "biome format . --fix",
+    "types": "pnpm -r types",
+    "changeset:release": "pnpm types && changeset publish",
+    "changeset:version": "changeset version && pnpm install --lockfile-only"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.5",
+    "@typescript-eslint/utils": "^8.38.0",
+    "eslint": "^9.32.0"
+  }
 }
