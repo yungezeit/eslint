@@ -1,5 +1,13 @@
 # @yungezeit/eslint-typescript
 
+## 0.0.21
+
+### Patch Changes
+
+- 410d7c3: Expose type definitions
+- Updated dependencies [410d7c3]
+  - @yungezeit/eslint-base@0.0.21
+
 ## 0.0.20
 
 ### Patch Changes

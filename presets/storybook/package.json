@@ -1,7 +1,7 @@
 {
   "name": "@yungezeit/eslint-storybook",
   "type": "module",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Personal Storybook ESLint flat config",
   "author": "Charles Gruenais",
   "license": "MIT",

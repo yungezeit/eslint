@@ -1,5 +1,11 @@
 # @yungezeit/eslint-cypress
 
+## 0.0.21
+
+### Patch Changes
+
+- 410d7c3: Expose type definitions
+
 ## 0.0.20
 
 ### Patch Changes
