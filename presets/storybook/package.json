@@ -35,12 +35,12 @@
   },
   "dependencies": {
     "@yungezeit/eslint-typescript": "workspace:*",
-    "eslint-plugin-storybook": "^9.0.18"
+    "eslint-plugin-storybook": "^9.1.6"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "@types/node": "^24.1.0",
-    "eslint": "^9.32.0",
-    "typescript": "^5.8.3"
+    "@types/node": "^24.5.0",
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2"
   }
 }

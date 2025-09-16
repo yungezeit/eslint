@@ -34,11 +34,11 @@
     "eslint": "^9.0.0"
   },
   "dependencies": {
-    "eslint-plugin-cypress": "^5.1.0"
+    "eslint-plugin-cypress": "^5.1.1"
   },
   "devDependencies": {
     "@types/eslint": "^9.6.1",
-    "eslint": "^9.32.0",
-    "typescript": "^5.8.3"
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2"
   }
 }
