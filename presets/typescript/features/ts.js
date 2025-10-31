@@ -24,6 +24,8 @@ const config = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     /** This rule is still experimental. */
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
+    /** What if I want to be explicit ? */
+    '@typescript-eslint/no-unnecessary-type-arguments': 'off',
     /** Using numbers in template expressions is rather safe and frequent. */
     '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
     /** Redundant type constitutents may be useful for clarity purposes. */
