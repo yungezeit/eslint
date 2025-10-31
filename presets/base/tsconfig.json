@@ -12,5 +12,5 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true
   },
-  "exclude": ["node_modules/**", "dist/**", "**/*.d.ts"]
+  "exclude": ["node_modules/**", "dist/**", "**/*.d.ts", "eslint.config.js"]
 }
