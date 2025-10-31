@@ -36,7 +36,7 @@
   "dependencies": {
     "@vue/eslint-config-typescript": "^14.6.0",
     "@yungezeit/eslint-typescript": "workspace:*",
-    "eslint-plugin-vue": "10.3.4",
+    "eslint-plugin-vue": "10.5.1",
     "globals": "^16.4.0"
   },
   "devDependencies": {
