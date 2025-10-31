@@ -6,13 +6,16 @@ runs:
   steps:
     - uses: actions/checkout@v4
     - name: Install pnpm
+      shell: bash
       uses: pnpm/action-setup@v4
       with:
         version: 10
     - name: Use Node.js
+      shell: bash
       uses: actions/setup-node@v4
       with:
         node-version: 24
         cache: pnpm
     - name: Install dependencies
+      shell: bash
       run: pnpm install
